@@ -11,7 +11,7 @@ $ apm install bliss-syntax
 
 ### Setup
 1. Go to your `Preferences` and click on `Themes` in the sidebar.
-2. Click on the `UI Theme` dropdown and change the value to `Bliss`.
+2. Click on the `Syntax Theme` dropdown and change the value to `Bliss`.
 
 ### UI Theme
 It is recommended to install [bliss-ui](https://github.com/saadq/bliss-ui) to use alongside this syntax theme.
