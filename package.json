@@ -1,0 +1,19 @@
+{
+  "author": "Saad Quadri",
+  "name": "bliss-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "An optimized version of base16-ocean",
+  "keywords": [
+    "syntax",
+    "theme",
+    "base16",
+    "ocean",
+    "spacegray"
+  ],
+  "repository": "https://github.com/saadq/bliss-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
