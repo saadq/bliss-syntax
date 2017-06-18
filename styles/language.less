@@ -35,7 +35,7 @@ atom-text-editor .bracket-matcher .region {
     color: @bliss-yellow;
   }
 
-  &.syntax--primitive, &.syntax--builtin {
+  &.syntax--primitive, &.syntax--builtin, &.syntax--existential {
     color: @bliss-yellow;
   }
 }
@@ -51,6 +51,10 @@ atom-text-editor .bracket-matcher .region {
     .syntax--variable {
       color: @bliss-orange;
     }
+  }
+
+  &.syntax--dom, &.syntax--console {
+    color: @bliss-foreground;
   }
 }
 
