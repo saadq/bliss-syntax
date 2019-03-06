@@ -1,35 +1,48 @@
-.github-HunkView-line.is-added {
-  .github-HunkView-lineContent {
-    background: @bliss-background;
-    color: @bliss-green;
-  }
-  .github-HunkView-plusMinus {
-    color: lighten(@bliss-green, 5%);
-  }
+.github-FilePatchView-line--added,
+.github-FilePatchView-line--deleted {
+  background: @bliss-background;
 }
 
-.github-HunkView-line.is-deleted {
-  .github-HunkView-lineContent {
-    background: @bliss-background;
-    color: @bliss-red;
-  }
-  .github-HunkView-plusMinus {
-    color: lighten(@bliss-red, 5%);
-  }
+.github-FilePatchView-line--selected,
+.github-FilePatchView atom-text-editor .selection .region, .github-FilePatchView-line--added.github-FilePatchView-line--selected, .github-FilePatchView-line--deleted.github-FilePatchView-line--selected {
+  background: @bliss-gray-2;
 }
 
-.github-FilePatchView:focus {
-  .github-HunkView-line.is-added.is-selected .github-HunkView-lineContent {
-    background: @syntax-selection-color;
-    color: @bliss-green;
-  }
-
-  .github-HunkView-line.is-deleted.is-selected .github-HunkView-lineContent {
-    background: @syntax-selection-color;
-    color: @bliss-red;
-  }
+.github-FilePatchView-line--added {
+  color: @bliss-green;
 }
 
-.github-FilePatchView:focus .github-HunkView-line.is-selected .github-HunkView-lineNumber {
-  background: @syntax-selection-color;
+.github-FilePatchView-line--deleted {
+  color: @bliss-red;
+}
+
+.github-FilePatchView-line--added.line.cursor-line,
+.github-FilePatchView-line--added.github-FilePatchView-line--selected {
+  background: fade(@bliss-green, 15%);
+}
+
+.github-FilePatchView-line--deleted.line.cursor-line,
+.github-FilePatchView-line--deleted.github-FilePatchView-line--selected {
+  background: fade(@bliss-red, 15%);
+}
+
+.github-FilePatchView .gutter.old .line-number.github-FilePatchView-line--selected, .github-FilePatchView .gutter.new .line-number.github-FilePatchView-line--selected {
+  background: @bliss-gray-3;
+}
+
+.github-HunkHeaderView--isSelected .github-HunkHeaderView-title:hover, .github-HunkHeaderView--isSelected .github-HunkHeaderView-stageButton:hover, .github-HunkHeaderView--isSelected .github-HunkHeaderView-discardButton:hover {
+  background: initial;
+}
+
+.github-HunkHeaderView {
+  background: @bliss-background;
+  color: @bliss-white;
+}
+
+.github-HunkHeaderView--isSelected {
+  background: lighten(@bliss-background, 5%);
+}
+
+.github-HunkHeaderView:hover, .github-HunkHeaderView--isSelected:hover {
+  background: lighten(@bliss-background, 5%);
 }
